@@ -1,12 +1,28 @@
 {
   "files": {
-    "main.js": "/static/js/main.d41fcdd0.js",
-    "static/js/496.bd290b7c.chunk.js": "/static/js/496.bd290b7c.chunk.js",
-    "index.html": "/index.html",
-    "main.d41fcdd0.js.map": "/static/js/main.d41fcdd0.js.map",
-    "496.bd290b7c.chunk.js.map": "/static/js/496.bd290b7c.chunk.js.map"
+    "main.js": "/argon-dashboard-chakra/static/js/main.c1c75321.js",
+    "static/media/signInImage.png": "/argon-dashboard-chakra/static/media/signInImage.dc6e0e9a8fb1a247b2d6.png",
+    "static/media/BgSignUp.png": "/argon-dashboard-chakra/static/media/BgSignUp.9b1e961ca6543cb35854.png",
+    "static/media/ImageArchitect3.png": "/argon-dashboard-chakra/static/media/ImageArchitect3.db5ecbbde9f4af32d7d3.png",
+    "static/media/admin-background.png": "/argon-dashboard-chakra/static/media/admin-background.5e6644918587dd6c222b.png",
+    "static/media/BackgroundCard1.png": "/argon-dashboard-chakra/static/media/BackgroundCard1.55c062c0873c8bc288f8.png",
+    "static/media/ImageArchitect2.png": "/argon-dashboard-chakra/static/media/ImageArchitect2.960c2b9cde21744e7afb.png",
+    "static/media/ImageArchitect1.png": "/argon-dashboard-chakra/static/media/ImageArchitect1.032614a5ad672027d4b3.png",
+    "static/media/avatar2.png": "/argon-dashboard-chakra/static/media/avatar2.5692c39db4f8c0ea999e.png",
+    "static/media/avatar9.png": "/argon-dashboard-chakra/static/media/avatar9.2db98189f85998b61c6b.png",
+    "static/media/avatar7.png": "/argon-dashboard-chakra/static/media/avatar7.00e8f4f007f327b73e71.png",
+    "static/media/avatar10.png": "/argon-dashboard-chakra/static/media/avatar10.1683e1c0cac6f333de9d.png",
+    "static/media/avatar3.png": "/argon-dashboard-chakra/static/media/avatar3.9f646ac5920fa40adf00.png",
+    "static/media/avatar6.png": "/argon-dashboard-chakra/static/media/avatar6.97310bf22e67482cece6.png",
+    "static/media/avatar1.png": "/argon-dashboard-chakra/static/media/avatar1.eeef2af6dfcd3ff23cb8.png",
+    "static/media/avatar5.png": "/argon-dashboard-chakra/static/media/avatar5.d2c5420ec4e01e97aef8.png",
+    "static/media/avatar8.png": "/argon-dashboard-chakra/static/media/avatar8.9719f14554a45416b270.png",
+    "static/media/avatar4.png": "/argon-dashboard-chakra/static/media/avatar4.54d5c1de851c273b2cd9.png",
+    "static/media/SidebarHelpImage.png": "/argon-dashboard-chakra/static/media/SidebarHelpImage.bace667c8b452f88fa9d.png",
+    "index.html": "/argon-dashboard-chakra/index.html",
+    "main.c1c75321.js.map": "/argon-dashboard-chakra/static/js/main.c1c75321.js.map"
   },
   "entrypoints": [
-    "static/js/main.d41fcdd0.js"
+    "static/js/main.c1c75321.js"
   ]
 }

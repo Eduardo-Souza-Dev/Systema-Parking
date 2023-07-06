@@ -1,47 +1,85 @@
-import { Navigate, useRoutes } from 'react-router-dom';
-// layouts
-import DashboardLayout from './layouts/dashboard';
-import SimpleLayout from './layouts/simple';
-//
-import BlogPage from './pages/BlogPage';
-import UserPage from './pages/UserPage';
-import LoginPage from './pages/LoginPage';
-import Page404 from './pages/Page404';
-import ProductsPage from './pages/ProductsPage';
-import DashboardAppPage from './pages/DashboardAppPage';
+// import
+import React, { Component }  from 'react';
+import Dashboard from "../src/views/Dashboard/Dashboard";
+import Tables from "../src/views/Dashboard/Tables.js";
+import Billing from "../src/views/Dashboard/Billing.js";
+import RTLPage from "../src/views/RTL/RTLPage.js";
+import Profile from "../src/views/Dashboard/Profile.js";
+import SignIn from "../src/views/Pages/SignIn.js";
+import SignUp from "../src/views/Pages/SignUp.js";
 
-// ----------------------------------------------------------------------
+import {
+  HomeIcon,
+  StatsIcon,
+  CreditIcon,
+  PersonIcon,
+  DocumentIcon,
+  RocketIcon,
+  SupportIcon,
+} from "../src/components/Icons/Icons";
 
-export default function Router() {
-  const routes = useRoutes([
-    {
-      path: '/dashboard',
-      element: <DashboardLayout />,
-      children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
-        { path: 'app', element: <DashboardAppPage /> },
-        { path: 'user', element: <UserPage /> },
-        { path: 'products', element: <ProductsPage /> },
-        { path: 'blog', element: <BlogPage /> },
-      ],
-    },
-    {
-      path: 'login',
-      element: <LoginPage />,
-    },
-    {
-      element: <SimpleLayout />,
-      children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
-        { path: '404', element: <Page404 /> },
-        { path: '*', element: <Navigate to="/404" /> },
-      ],
-    },
-    {
-      path: '*',
-      element: <Navigate to="/404" replace />,
-    },
-  ]);
-
-  return routes;
-}
+var dashRoutes = [
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    icon: <HomeIcon color='inherit' />,
+    component: Dashboard,
+    layout: "/admin",
+  },
+  {
+    path: "/tables",
+    name: "Tables",
+    icon: <StatsIcon color='inherit' />,
+    component: Tables,
+    layout: "/admin",
+  },
+  {
+    path: "/billing",
+    name: "Billing",
+    icon: <CreditIcon color='inherit' />,
+    component: Billing,
+    layout: "/admin",
+  },
+  {
+    path: "/rtl-support-page",
+    name: "RTL",
+    rtlName: "آرتيإل",
+    icon: <SupportIcon color='inherit' />,
+    component: RTLPage,
+    layout: "/rtl",
+  },
+  {
+    name: "ACCOUNT PAGES",
+    category: "account",
+    rtlName: "صفحات",
+    state: "pageCollapse",
+    views: [
+      {
+        path: "/profile",
+        name: "Profile",
+  
+        icon: <PersonIcon color='inherit' />,
+        secondaryNavbar: true,
+        component: Profile,
+        layout: "/admin",
+      },
+      {
+        path: "/signin",
+        name: "Sign In",
+  
+        icon: <DocumentIcon color='inherit' />,
+        component: SignIn,
+        layout: "/auth",
+      },
+      {
+        path: "/signup",
+        name: "Sign Up",
+  
+        icon: <RocketIcon color='inherit' />,
+        component: SignUp,
+        layout: "/auth",
+      },
+    ],
+  },
+];
+export default dashRoutes;

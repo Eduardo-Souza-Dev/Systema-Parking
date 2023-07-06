@@ -1,35 +1,25 @@
-import ReactDOM from 'react-dom/client';
-import { initializeApp } from 'firebase/app';
-//
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import reportWebVitals from './reportWebVitals';
 
-const firebaseConfig = {
-    apiKey: "AIzaSyDAdJlSbYPvdgLrWUNofB9FzKQjyBc5o3I",
-    authDomain: "system-park-da0d6.firebaseapp.com",
-    projectId: "system-park-da0d6",
-    storageBucket: "system-park-da0d6.appspot.com",
-    messagingSenderId: "530535048372",
-    appId: "1:530535048372:web:b669a870791e485e8d63e1",
-    measurementId: "G-KQ5HM8S4MZ"
-  };
+import React from "react";
+import ReactDOM from "react-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 
+import AuthLayout from "./layouts/Auth.js";
+import AdminLayout from "./layouts/Admin.js";
+import RTLLayout from "./layouts/RTL.js"; // Chakra imports
+import { ChakraProvider } from "@chakra-ui/react";
+// Custom Chakra theme
+import theme from "./theme/theme.js";
 
-
-// ----------------------------------------------------------------------
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-
-
-root.render(<App />);
-
-initializeApp(firebaseConfig);
-// If you want to enable client cache, register instead.
-serviceWorker.unregister();
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+  <ChakraProvider theme={theme} resetCss={false} position="relative">
+    <HashRouter>
+      <Switch>
+        <Route path={`/auth`} component={AuthLayout} />
+        <Route path={`/admin`} component={AdminLayout} />
+        <Route path={`/rtl`} component={RTLLayout} />
+        <Redirect from={`/`} to="/admin/dashboard" />
+      </Switch>
+    </HashRouter>
+  </ChakraProvider>,
+  document.getElementById("root")
+);
