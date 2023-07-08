@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/argon-dashboard-chakra/static/js/main.c1c75321.js",
+    "main.js": "/argon-dashboard-chakra/static/js/main.d1848c1e.js",
     "static/media/signInImage.png": "/argon-dashboard-chakra/static/media/signInImage.dc6e0e9a8fb1a247b2d6.png",
     "static/media/BgSignUp.png": "/argon-dashboard-chakra/static/media/BgSignUp.9b1e961ca6543cb35854.png",
     "static/media/ImageArchitect3.png": "/argon-dashboard-chakra/static/media/ImageArchitect3.db5ecbbde9f4af32d7d3.png",
@@ -20,9 +20,9 @@
     "static/media/avatar4.png": "/argon-dashboard-chakra/static/media/avatar4.54d5c1de851c273b2cd9.png",
     "static/media/SidebarHelpImage.png": "/argon-dashboard-chakra/static/media/SidebarHelpImage.bace667c8b452f88fa9d.png",
     "index.html": "/argon-dashboard-chakra/index.html",
-    "main.c1c75321.js.map": "/argon-dashboard-chakra/static/js/main.c1c75321.js.map"
+    "main.d1848c1e.js.map": "/argon-dashboard-chakra/static/js/main.d1848c1e.js.map"
   },
   "entrypoints": [
-    "static/js/main.c1c75321.js"
+    "static/js/main.d1848c1e.js"
   ]
 }
