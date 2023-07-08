@@ -1,8 +1,8 @@
 {
 	"name": "argon-dashboard-chakra",
 	"version": "1.0.3",
-	"private": true,
-	"homepage": "https://demos.creative-tim.com/argon-dashboard-chakra/#/",
+	"private": false,
+	"homepage": "",
 	"dependencies": {
 		"@chakra-ui/icons": "^1.1.5",
 		"@chakra-ui/react": "1.8.8",
